@@ -46,7 +46,7 @@ const HeroSection = () => {
             className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-primary-foreground mb-6"
           >
             Grow Smarter with{" "}
-            <span className="text-secondary">AgriVision AI</span>
+            <span className="text-secondary">AgriFarms AI</span>
           </motion.h1>
 
           <motion.p

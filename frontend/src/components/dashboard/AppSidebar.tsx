@@ -1,4 +1,5 @@
-import { Sprout, LayoutDashboard, Map, Wheat, BarChart3, Brain, CloudSun, Bell, Users, Settings, LogOut } from "lucide-react";
+import { LayoutDashboard, Map, Wheat, BarChart3, Brain, CloudSun, Bell, Users, Settings, LogOut } from "lucide-react";
+import BrandMark from "@/components/BrandMark";
 import { NavLink } from "@/components/NavLink";
 import {
   Sidebar,
@@ -40,8 +41,7 @@ export function AppSidebar() {
       <SidebarContent>
         <div className="px-4 py-4">
           <Link to="/dashboard" className="flex items-center gap-2">
-            <Sprout className="h-7 w-7 text-sidebar-primary" />
-            {!collapsed && <span className="font-heading text-lg font-bold text-sidebar-foreground">AgriVision</span>}
+            <BrandMark showText={!collapsed} iconClassName="h-8 w-8 rounded-xl" textClassName="text-lg text-sidebar-foreground" />
           </Link>
         </div>
 

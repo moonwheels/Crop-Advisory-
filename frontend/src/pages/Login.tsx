@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Sprout, Mail, Lock, Eye, EyeOff, Loader2 } from "lucide-react";
+import { Mail, Lock, Eye, EyeOff, Loader2 } from "lucide-react";
+import BrandMark from "@/components/BrandMark";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -38,8 +39,7 @@ const Login = () => {
         <div className="bg-card rounded-2xl shadow-elevated border border-border p-8">
           <div className="text-center mb-8">
             <Link to="/" className="inline-flex items-center gap-2 mb-4">
-              <Sprout className="h-8 w-8 text-primary" />
-              <span className="font-heading text-2xl font-bold text-foreground">AgriVision</span>
+              <BrandMark textClassName="text-2xl text-foreground" />
             </Link>
             <h1 className="font-heading text-xl font-semibold text-foreground">Welcome back</h1>
             <p className="text-muted-foreground text-sm mt-1">Log in to your account</p>
